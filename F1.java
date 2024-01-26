@@ -5,17 +5,17 @@ class lc
     {
         Scanner Sc=new Scanner (System.in);
         System.out.println("enter sentence");
-        String str= Sc.nextLine();
+        String str1= Sc.nextLine();
         String nstr="";
-        str=str.toLowerCase();
+        str1=str1.toLowerCase();
         char st;
-        int l=str.length();
+        int l=str1.length();
         for(int i=0;i<l;i++)
         {
-            char ch= str.charAt(i);
+            char ch= str1.charAt(i);
             if(ch==' ')
             {
-                st=str.charAt(i+1);
+                st=str1.charAt(i+1);
                 nstr=nstr+" "+Character.toUpperCase(st);
                 i++;
                 continue;
@@ -25,7 +25,7 @@ class lc
                 nstr=nstr+ch;
             }
         }
-        System.out.println(str);
+        System.out.println(str1);
         System.out.println(nstr);
     }
 }
